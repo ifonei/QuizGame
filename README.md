@@ -2,7 +2,7 @@
 ### QuizGame is an iOS application that offers quizes.
 
 ###  ✨Application Features
-- It is a simple iOS app built by Swift, which presents a quick quiz, marks the answers, and shows to the participant result.
+- It is a simple iOS app built by Swift, which presents a quick quiz, marks the answers, and shows the result to participants.
 - Data is not yet stored in CoreData.
 - Animation is to be used later on to make the app interface more friendly.
 - A progress bar is shown to the participant to indicate their progress.
