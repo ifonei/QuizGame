@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startButton(_ sender: Any) {
-        print("===============000000===============")
         let vc = storyboard?.instantiateViewController(withIdentifier: "Quiz") as? Quiz
         if let viewController = vc {
             navigationController?.pushViewController(viewController, animated: true)

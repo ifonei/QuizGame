@@ -29,17 +29,21 @@ class Quiz: UIViewController {
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var QView: UIView!
     @IBOutlet weak var qNoLabel: UILabel!
-    
+    @IBOutlet weak var QTextView: UITableView!
+    @IBOutlet weak var qStackView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
         quizArray.shuffle()
         qNo = 0
         questionTextView.text = quizArray[qNo].qString
-        qNoLabel.text = "Q\(qNo + 1): "
+        qNoLabel.text = "السؤال\(qNo + 1): "
         
         trueButton.layer.cornerRadius = 15
         falseButton.layer.cornerRadius = 15
         QView.layer.cornerRadius = 20
+        QTextView.layer.cornerRadius = 20
+        qStackView.layer.cornerRadius = 20
+        
     }
     
     @IBAction func trueButton(_ sender: Any) {
@@ -53,7 +57,7 @@ class Quiz: UIViewController {
             }
             qNo += 1
             if qNo < 10{
-                qNoLabel.text = "Q\(qNo + 1): "
+                qNoLabel.text = "السؤال\(qNo + 1): "
                 questionTextView.text = quizArray[qNo].qString
             }else{
                 showResultMessage()
@@ -67,7 +71,7 @@ class Quiz: UIViewController {
             }
             qNo += 1
             if qNo<10{
-                qNoLabel.text = "Q\(qNo + 1): "
+                qNoLabel.text = "السؤال\(qNo + 1): "
                 questionTextView.text = quizArray[qNo].qString
             }else{
                 showResultMessage()
@@ -85,7 +89,7 @@ class Quiz: UIViewController {
             }
             qNo += 1
             if qNo < 10{
-                qNoLabel.text = "Q\(qNo + 1): "
+                qNoLabel.text = "السؤال\(qNo + 1): "
                 questionTextView.text = quizArray[qNo].qString
             }else{
                 showResultMessage()
@@ -99,7 +103,7 @@ class Quiz: UIViewController {
             }
             qNo += 1
             if qNo<10{
-                qNoLabel.text = "Q\(qNo + 1): "
+                qNoLabel.text = "السؤال\(qNo + 1): "
                 questionTextView.text = quizArray[qNo].qString
             }else{
                 showResultMessage()
@@ -121,12 +125,3 @@ class Quiz: UIViewController {
     }
     
 }
-
-
-
-
-
-
-
-
-
