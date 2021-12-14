@@ -88,10 +88,9 @@
         self.present(alert, animated: true, completion: nil)
     }
 ```
-
---
-Demos
 ---
+
+# Demos
 
 
 <img src= "https://user-images.githubusercontent.com/95880640/145990210-6cfb9632-ac56-4fc0-9179-ecb5fb0d79b8.png" height="500"> <img src= "https://user-images.githubusercontent.com/95880640/145990234-758c6e53-d997-4a2b-bd74-b17ad288047f.png" height="500"> 
